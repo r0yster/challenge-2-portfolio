@@ -20,7 +20,7 @@ header h1 {
 }
 
 header nav {
-    margin: 1% 0;
+    margin: 7px 0;
 }
 
 header nav ul {
@@ -38,9 +38,104 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
-.about-me img {
-    width: 431px;
-    height: 373px;
-    float: left;
-    padding: 10px;
+.container {
+    margin: 20px;
+}
+
+.section-headers {
+    font-size: 48px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.about-info {
+    width: 100%;
+}
+
+.profile-summary {
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-summary img {
+    width: 35%;
+}
+
+.profile-summary p {
+    width: 60%;
+    font-size: 1.4vw;
+    line-height: 2.0;
+    text-align: justify;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px
+}
+
+.project-past {
+    margin: 20px;
+    flex: 1;
+}
+
+.project-past img {
+    width: 50%;
+}
+
+.project-current {
+    margin: 20px;
+    flex:1;
+}
+
+.project-current img {
+    width: 100%;
+}
+
+.links {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.links ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.links ul li {
+    padding: 10px 15px;
+    font-size: 1.5vw;
+}
+
+.links ul li a {
+    padding: 0 30px; 
+}
+
+footer {
+    display: block;
+    padding: 32px;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    .project-past {
+        flex: 0 70%;
+    }
+}
+
+@media screen and (max-width: 575 px) {
+    .project-past {
+        flex: 0 100%;
+    }
 }
