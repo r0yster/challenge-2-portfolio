@@ -37,25 +37,24 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
-
-.container {
-    margin: 20px;
-}
-
 .section-headers {
-    font-size: 48px;
+    font-size: 36px;
     padding-bottom: 20px;
     text-align: center;
-    margin: 0 auto 35px auto;
+    margin: 0 auto 0 auto;
     width: 50%;
 }
 
 .about-info {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 .profile-summary {
-    margin: 50px auto;
+    margin: 10px auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -64,21 +63,23 @@ header nav ul li a {
 }
 
 .profile-summary img {
-    width: 35%;
+    padding: 20px;
+    width: 40%;
+    margin: 3.5%;
 }
 
 .profile-summary p {
-    width: 60%;
-    font-size: 1.4vw;
-    line-height: 2.0;
-    text-align: justify;
+    width: 35%;
+    margin: 3.5%;
+    font-size: 18px;
+    line-height: 1.2;
 }
 
 .projects {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 60px
+    padding: 30px
 }
 
 .project-past {
@@ -121,21 +122,21 @@ header nav ul li a {
 }
 
 footer {
-    display: block;
-    padding: 32px;
-    text-align: center;
-    bottom: 0px;
+    padding: 40px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 @media screen and (max-width: 980px) {
-    .project-past {
+    .project-past, .project-current{
         flex: 0 70%;
     }
 }
 
 @media screen and (max-width: 575 px) {
-    .project-past {
+    .project-past, .project-current {
         flex: 0 100%;
     }
 }
